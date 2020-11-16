@@ -1,0 +1,55 @@
+/* Responsive design */
+
+/* Desktop >1200px */
+@media only screen and (min-width: 1200px) {
+   
+}
+
+
+/* Tablet 768-1200px */
+@media only screen and (max-width: 1200px) {
+    .grid2 {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 350px 350px;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .grid2-it {
+        border: solid 1px black;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .grid2-it img {
+        width: 100%;
+    }
+    
+    .grid {
+        display: grid;
+        margin: auto;
+        grid-template-columns: auto;
+        padding-top: 40px;
+        justify-content: space-evenly;
+    }
+    
+    .grid-it {
+        padding: 10px;
+    }
+    
+    .grid-it a img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+/* Mobile <768px */
+@media only screen and (max-width: 768px) {
+
+}

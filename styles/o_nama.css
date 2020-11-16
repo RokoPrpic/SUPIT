@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navigation bar */
+nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+
+nav img { 
+    background-color: black;
+    margin-left: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #000;
+    display: inline-block;
+}
+
+nav ul li {
+    float: left;
+    height: 70px;
+}
+
+nav ul i {
+    color: #ffcc2f;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 0.8em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 160px;
+    margin-bottom: 15px;
+    height: auto;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #ffcc2f !important;
+}
+
+#inputC {
+    margin: 30px 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#secNav {
+    list-style-type: none;
+    /* display: inline-block; */
+    float: right;
+    /* animation: 1s ease-out 0s 1 slideInFromRight; */
+}
+
+#secNav ul li a {
+    color: #ffcc2f;
+}
+
+
+/* Main section */
+
+
+#gradIMG {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.on1 h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+#ul {
+    width: 70%;
+    border: 2px solid #ffcc2f;
+    margin: auto; 
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    color: crimson;
+}
+
+
+h3 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.on1, .on3, .on5, .on7 {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.on2, .on4, .on6 {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.lat {
+    font-style: italic;
+    text-align: center;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.grid0 {
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid0-it {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.grid1 {
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid1-it {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.grid2 {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 350px 350px 350px 350px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.grid2-it {
+    border: solid 1px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid2-it img {
+    width: 100%;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.grid3-it {
+    border: solid 1px black;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    height: 300px;
+}
+footer img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+}
+
+footer p {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    margin-left: 35%;
+    margin-top: 120px;
+}
+
+/* Contact */
+.popup_bg {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup_form {
+    border-radius: 1%;
+    background-color: white;
+    margin: 10% auto;
+    padding: 10px;
+    width: 40%;
+    height: 60%;
+}
+
+#c_form {
+    width: 100%;
+    height: auto;
+}
+
+
+#c_form input, textarea {
+    width: 100%;
+}
+
+#c_form input, select {
+    height: 40px;
+    padding: 5px;
+}
+
+#c_form textarea {
+    height: 100px;
+}
+
+#cb {
+    width: 10% !important;
+    padding: 1px !important;
+    height: 15px !important;
+    
+}
+
+button[type=submit], [type=cancel] {
+    padding: 10px;
+    margin: 10px;
+}
+
+label {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+
