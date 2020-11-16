@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>SUPIT projekt</title>
+    <meta name="Roko Prpic" content="SUPIT projekt">
+    <link href="/styles/n3.css"  rel="stylesheet" />
+    <link href="/styles/queries.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/db6177ac79.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav> 
+        <img id="navimg" src="./material/img/Algebra-logo.png">
+        <ul>
+            <li><a href="pocetna.html"><i class="fas fa-home"></i>Pocetna</a></li>
+            <li><a href="o_nama.html"><i class="fas fa-comments"></i>O nama</a></li>
+            <li><a href="novosti.html"><i class="fas fa-info-circle"></i>Novosti</a></li>
+            <li><a href="nastavni_plan.html"><i class="fas fa-info-circle"></i>Nastavni plan</a></li>
+            <li><button type="button" id="inputC" onclick="openForm()"><i class="fas fa-envelope"></i>Kontakt</button></li>
+        </ul>
+    </nav>
+
+    <!--Main content-->
+    <main>
+        <div class="fimg">
+            <img src="./material/img/novost3.jpg">
+        </div>
+        <div class="stxt">
+            <h2>Digitalno Junior ljeto</h2>
+            <p>Algebra Junior organizira edukativne i zabavne ljetne
+                praznike za sve osnovnoškolce! I ove smo godine
+                pripremili digitalne radionice za djecu čiji je fokus
+                rješavanja raznih problema korištenjem tehnologije,
+                multimedije, digitalnog dizajna i komunikacija te
+                stvaranju sadržaja u svim multimedijskim i softverskim
+                oblicima. Radionice se održavaju u sklopu Digitalnog
+                ljetnog kampa u Crikvenici i Digitalne ljetne škole u
+                Zagrebu kako bismo se družili, zabavljali i učili i na
+                moru i na kontinentu! Na digitalnom kampu i u školi
+                provodit će se dva različita programa koji su
+                namijenjena djeci od 1. do 8. razreda. Ovisno o
+                odabranom terminu, polaznici će prolaziti kroz 1. ili 2.
+                program, a u slučaju pohađanja dvotjednih programa –
+                oba. U prvom programu nađe nindže uče biti glazbeni
+                menadžeri dok su u drugom novinari i kreatori
+                informacija masovnih medija. Provjerite termine, cijene
+                i lokacije škole i kampa na sljedećem linku.</p>
+        </div>
+    </main>
+
+    <!--Contact form-->
+    <div class="popup_bg" id="contact">
+        <div class="popup_form">
+            <form id="c_form" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+                <h1>Kontaktirajte nas</h1>
+                <label>Puno ime</label>
+                <input type="text" name="name" required>
+                <label>E-mail</label>
+                <input type="text" name="email" required>
+                <label>Vaznost poruke</label>
+                <select name="importance">
+                    <option value="Visoka">Visoka</option>
+                    <option value="Niska">Niska</option>
+                </select>
+                <label>Vasa poruka:</label>
+                <textarea name="message"></textarea>
+                <label>Primaj newsletter:</label>
+                <input id="cb" type="checkbox" name="newsletter"><br>
+                <button type="submit">Posalji</button>
+                <button  type="cancel" onclick="closeForm()">Odustani</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>

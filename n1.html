@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>SUPIT projekt</title>
+    <meta name="Roko Prpic" content="SUPIT projekt">
+    <link href="/styles/n1.css" rel="stylesheet" />
+    <link href="/styles/queries.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/db6177ac79.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav>
+        <img id="navimg" src="./material/img/Algebra-logo.png">
+        <ul>
+            <li><a href="pocetna.html"><i class="fas fa-home"></i>Pocetna</a></li>
+            <li><a href="o_nama.html"><i class="fas fa-comments"></i>O nama</a></li>
+            <li><a href="novosti.html"><i class="fas fa-info-circle"></i>Novosti</a></li>
+            <li><a href="nastavni_plan.html"><i class="fas fa-info-circle"></i>Nastavni plan</a></li>
+            <li><button type="button" id="inputC" onclick="openForm()"><i class="fas fa-envelope"></i>Kontakt</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Main content-->
+    <main>
+        <div class="fimg">
+            <img src="./material/img/novost1.jpg">
+            <strong>
+                <p>Student Josip Stanesic 12. je sistemas svijeta
+                    i dobitnik medalje izvrsnosti</p>
+            </strong>
+        </div>
+        <div class="stxt">
+            <h2>WorldSkills natjecanje - Kazan 2019</h2>
+            <p>Nakon godinu dana priprema za natjecanje WorldSkills
+                Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                cijelog svijeta, trud se itekako isplatio. Josip,
+                student 3. godine preddiplomskog studija sistemskog
+                inženjerstva osvojio je 12. mjesto u vještini IT
+                Networks and System Administration te osvojio medalju
+                izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                mentorima koji su ga pripremali za ovo natjecanje –
+                voditelju studija sistemskog inženjerstva Silviju
+                Papiću, voditelju katedre za operacijske sustave –
+                Vedranu Dakiću i asistentu na studiju sistemskog
+                inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+                studentu 3.godine preddiplomskog studija programskog
+                inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                16.mjestu u vještini IT Software Solutions for Business.</p>
+
+            <div class="media">
+                <div class="media_grid">
+                    <div class="media_grid-it">
+                        <img src="./material/img/galerija1.jpg">
+                    </div>
+                    <div class="media_grid-it">
+                        <img src="./material/img/galerija2.jpg">
+                    </div>
+                </div>
+                <video controls autoplay muted>
+                    <source src="material/video/worldskills.mp4">
+                </video>
+            </div>
+
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <img src="material/img/zaiskri-bg.jpg" />
+        <p>BUDI IZVRSTAN U ONOM STO VOLIS<br><br>ZAISKRI</p>
+    </footer>
+
+    <!--Contact form-->
+    <div class="popup_bg" id="contact">
+        <div class="popup_form">
+            <form id="c_form" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+                <h1>Kontaktirajte nas</h1>
+                <label>Puno ime</label>
+                <input type="text" name="name" required>
+                <label>E-mail</label>
+                <input type="text" name="email" required>
+                <label>Vaznost poruke</label>
+                <select name="importance">
+                    <option value="Visoka">Visoka</option>
+                    <option value="Niska">Niska</option>
+                </select>
+                <label>Vasa poruka:</label>
+                <textarea name="message"></textarea>
+                <label>Primaj newsletter:</label>
+                <input id="cb" type="checkbox" name="newsletter"><br>
+                <button type="submit">Posalji</button>
+                <button  type="cancel" onclick="closeForm()">Odustani</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>

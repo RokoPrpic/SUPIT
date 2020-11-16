@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>SUPIT projekt</title>
+    <meta name="Roko Prpic" content="SUPIT projekt">
+    <link href="/styles/pocetna.css" rel="stylesheet" />
+    <link href="/styles/queries.css" rel="stylesheet" /> <!-- media queries -->
+    <script src="https://kit.fontawesome.com/db6177ac79.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav>
+        <img id="navimg" src="./material/img/Algebra-logo.png">
+        <ul>
+            <li><a href="pocetna.html"><i class="fas fa-home"></i>Pocetna</a></li>
+            <li><a href="o_nama.html"><i class="fas fa-comments"></i>O nama</a></li>
+            <li><a href="novosti.html"><i class="fas fa-info-circle"></i>Novosti</a></li>
+            <li><a href="nastavni_plan.html"><i class="fas fa-info-circle"></i>Nastavni plan</a></li>
+            <li><button type="button" id="inputC" onclick="openForm()"><i class="fas fa-envelope"></i>Kontakt</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Main content-->
+
+    <!-- Text loop -->
+    <div class="txtloop">
+        <div class="in">
+            <p class="txt" id="t1"></p>
+            <p class="txt" id="t2"></p>
+            <p class="txt" id="t3"></p>
+            <p class="txt blink" id="t4">|</p>
+        </div>
+        <main>
+            <video autoplay loop controls>
+                <source src="/material/video/typingOnlaptop.mp4" type="video/mp4">
+            </video>
+        </main>
+    </div>
+
+    <!--Footer
+    <footer>
+        <img src="material/img/zaiskri-bg.jpg" />
+        <p>BUDI IZVRSTAN U ONOM STO VOLIS<br><br>ZAISKRI</p>
+    </footer> -->
+
+
+    <!--Contact form-->
+    <div class="popup_bg" id="contact">
+        <div class="popup_form">
+            <form id="c_form" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+                <h1>Kontaktirajte nas</h1>
+                <label>Puno ime</label>
+                <input type="text" name="name" required>
+                <label>E-mail</label>
+                <input type="text" name="email" required>
+                <label>Vaznost poruke</label>
+                <select name="importance">
+                    <option value="Visoka">Visoka</option>
+                    <option value="Niska">Niska</option>
+                </select>
+                <label>Vasa poruka:</label>
+                <textarea name="message"></textarea>
+                <label>Primaj newsletter:</label>
+                <input id="cb" type="checkbox" name="newsletter"><br>
+                <button type="submit">Posalji</button>
+                <button type="cancel" onclick="closeForm()">Odustani</button>
+            </form>
+        </div>
+    </div>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/loop.js"></script>
+</body>
+
+</html>
